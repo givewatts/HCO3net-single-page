@@ -1,7 +1,60 @@
-p {
+body {
+  margin: 1rem;
+  font-size: 17px;
+}
+
+p.intro {
   font-weight: bold;
+  font-size: 1.1875rem;
+  margin-left: 2em;
+}
+
+h1 {
+  text-decoration: underline;
+  text-underline-offset: 0.1em;
+}
+
+h2 {
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-underline-offset: 0.3em;
+}
+
+h3 {
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-underline-offset: 0.3em;
 }
 
 dt {
   font-weight: bold;
+  font-size: 1.0625rem;
+  margin-bottom: 0.5em;
+}
+
+dd {
+  margin-bottom: 1em;
+}
+
+nav.main {
+  font-size: 1.25rem
+}
+
+div.nav {
+  margin-block: 1.5em;
+}
+
+a.subnav1 {
+font-size: 1rem;
+}
+
+section {
+  margin-left: 1.5em;
+}
+
+span.server-options {
+  background-color: black;
+  color: white;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
 }
