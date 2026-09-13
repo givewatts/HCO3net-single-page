@@ -3,6 +3,12 @@ body {
   font-size: 17px;
 }
 
+.toc {
+  width: fit-content;
+  margin-inline: auto;
+  margin-top: 1em;
+}
+
 p.intro {
   font-weight: bold;
   font-size: 1.1875rem;
@@ -15,9 +21,13 @@ h1 {
 }
 
 h2 {
-  text-decoration: underline;
+  border: 2px solid;
+  padding: 0.125em;
+  display: inline-block;
+  width: 90%;
+/*  text-decoration: underline; 
   text-decoration-style: dashed;
-  text-underline-offset: 0.3em;
+  text-underline-offset: 0.3em; */
 }
 
 h3 {
@@ -26,10 +36,14 @@ h3 {
   text-underline-offset: 0.3em;
 }
 
+h4 {
+  display: inline-block;
+}
+
 dt {
   font-weight: bold;
   font-size: 1.0625rem;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.25em;
 }
 
 dd {
@@ -49,10 +63,10 @@ a.subnav1 {
 }
 
 section {
-  margin-left: 1.5em;
+  margin-inline: 1.5em;
 }
 
-section.divider {
+.divider {
   border-top: 5px ridge;
 }
 
@@ -61,4 +75,3 @@ span.server-options {
   color: white;
   padding-left: 0.25em;
   padding-right: 0.25em;
-}

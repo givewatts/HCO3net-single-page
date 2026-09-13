@@ -6,54 +6,106 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <h1 id="home">HCO3 Network</h1>
-    <nav class="main">
-      <div class="nav">🔗 <a href="#services">Services:</a> <a class="subnav1" href="#client-server">Retro Client/Server</a></div>
-    </nav>
+    <header>
+      <h1 id="home">HCO3 Network</h1>
 
-    <section id="services" class="divider">
-      <h2>Open Access Internet Services</h2>
-      <p class="intro">We provide the following services for free to the internet community:</p>
-      
-      <section id="client-server">
-        <h3>Retro Client/Server</h3>
-        <dl>
-          <dt>Hotline Connect Server</dt>
-          <dd>
-            Client/server protocol popular in the mid-late '90s. 
-            Chat, message boards, and file sharing. Similar to a GUI BBS.
+      <nav class="main">
+        <div class="nav">🔗 <a href="#services">Services:</a> 
+          <a class="subnav1" href="#client-server">Retro Client/Server</a></div>
+      </nav>
+    </header>
 
-            <ul>
-              <li><span class="server-options">ADDRESS: hotline.hco3.xyz</span></li>
-              <li><span class="server-options">PORT: 500 (default)</span></li>
-              <li><span class="server-options">LOGIN: guest (default)</span></li>
-            </ul>
-          </dd>
+    <main class="divider">
+      <details class="toc">
+        <summary>Quick Navigation</summary>
+        <ol>
+          <li><a href="#services">Services</a></li>
+            <ol>
+              <li><a href="#client-server">Retro Client/Server</a></li>
+                <ol>
+                  <li><a href="#hotline">Hotline Connect Server</a></li>
+                  <li><a href="#kdx">Haxial KDX Server</a></li>
+                </ol>
+            </ol>
+            <ol>
+              <li><a href="#chat">Chat</a></li>
+                <ol>
+                  <li><a href="#irc">IRC Server</a></li>
+                </ol>
+            </ol>
+          <li><a href="#content">Interesting Things</a></li>
+            <ol>
+              <li><a href="#turtles">Turtles</a></li>
+            </ol>
+        </ol>
+      </details>
 
-          <dt>Haxial KDX Server</dt>
-          <dd>A newer protocol from the same era by the creator of Hotline. 
-            Includes everything Hotline has, with a multitude of additions.
+      <section id="services">
+        <details name="primary-content"> 
+          <summary><h2>Open Access Internet Services</h2></summary>
+          <p class="intro">We provide the following services for free to the internet community:</p>
 
-            <ul>
-              <li><span class="server-options">ADDRESS: kdx.hco3.xyz</span></li>
-              <li><span class="server-options">PORT: 10700 (default)</span></li>
-              <li><span class="server-options">LOGIN: guest (default)</span></li>
-            </ul>
-          </dd>
-        </dl>
-        <p>Neither servers require an account.
-        Accounts are available if you expect to hang out regularly and would like the customization.</p>
+          <section id="client-server">
+            <h3>Retro Client/Server</h3>
+            <dl>
+              <dt id="hotline">Hotline Connect Server</dt>
+              <dd>
+                Client/server protocol popular in the mid-late '90s. 
+                Chat, message boards, and file sharing. Similar to a GUI BBS.
+                <ul>
+                  <li><span class="server-options">ADDRESS: hotline.hco3.xyz</span></li>
+                  <li><span class="server-options">PORT: 500 (default)</span></li>
+                  <li><span class="server-options">LOGIN: guest (default)</span></li>
+                </ul>
+              </dd>
+
+              <dt id="kdx">Haxial KDX Server</dt>
+              <dd>A newer protocol from the same era by the creator of Hotline. 
+                Includes everything Hotline has, with a multitude of additions.
+                <ul>
+                  <li><span class="server-options">ADDRESS: kdx.hco3.xyz</span></li>
+                  <li><span class="server-options">PORT: 10700 (default)</span></li>
+                  <li><span class="server-options">LOGIN: guest (default)</span></li>
+                </ul>
+              </dd>
+            </dl>
+            <p>Neither servers require an account.
+            Accounts are available if you expect to hang out regularly and would like the customization.</p>
+
+            <a href="#home">△ HOME</a>
+          </section>
+
+          <section id="chat">
+            <h3>Chat</h3>
+            <dl>
+              <dt id="irc">Internet Relay Chat (IRC) <em>COMING SOON</em></dt>
+              <dd>Still-popular early chat (as well as early file sharing) protocol. An example of federation before it was known as that. Independent IRC servers link the form networks.</dd>
+            </dl>
+
+            <a href="#home">△ HOME</a>
+          </section>
+        </details>
       </section>
 
-      <section id="chat">
-        <h3>Chat</h3>
-        <dl>
-          <dt>Internet Relay Chat (IRC) <em>COMING SOON</em></dt>
-          <dd>Still-popular early chat (as well as early file sharing) protocol. An example of federation before it was known as that. Independent IRC servers link the form networks.</dd>
-        </dl>
+      <section id="content">
+        <details name="primary-content">
+          <summary><h2>Interesting Things</h2></summary>
+          <p class="intro">There's also some content that will be interesting to some:</p>
+
+          <section id="turtles">
+            <h3>Turtles</h3>
+            <details>
+              <summary><h4>Kevin</h4></summary>
+              <figure>
+                <img src="assets/images/kevin-current/kevin-sleeping.jpg" alt="Kevin (red eared slider turtle) sleeping in a silly position.">
+                <figcaption>The best turtle!</figcaption>
+              </figure>
+              <p><a href="assets/images/kevin/">See more Kevin!</a></p>
+            </details>
+          </section>
       </section>
-    </section>
-    
-    <a href="#home">△ HOME</a>
+
+      <a href="#home">△ HOME</a>
+    </main>
 </html>
 
